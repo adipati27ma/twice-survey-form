@@ -23,12 +23,20 @@ body {
 
 h1 {
   font-size: 2rem;
+  margin-bottom: .5em;
 }
 
 h1,
-p {
+p#description {
   text-align: center;
   color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+p#description {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 3em;
 }
 
 form {
