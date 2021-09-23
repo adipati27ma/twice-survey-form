@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twice Survey Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">Twice Survey</h1>
+  <p id="description">Please fill the form for Twice, thank you.</p>
+
+  <form action="" id="survey-form">
+
+    <div class="form-group">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" name="name" id="name" required placeholder="Enter your name">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="email" id="email-label">
+        Email
+        <input type="email" name="email" id="email" required placeholder="Enter your email">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="age" id="number-label">
+        Age <span class="clue">(optional)</span>
+        <input type="number" name="age" id="number" required placeholder="How old are you?" min="10" max="99">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown" id="member-label">
+        Which member do you like the most?
+        <select id="dropdown" name="member" required>
+          <option disabled selected value>Select your favorite member</option>
+          <option value="Nayeon">Nayeon</option>
+          <option value="Jeongyeon">Jeongyeon</option>
+          <option value="Tzuyu">Tzuyu</option>
+          <option value="Momo">Momo</option>
+          <option value="Jihyo">Jihyo</option>
+          <option value="Dahyun">Dahyun</option>
+          <option value="Chaeyeong">Chaeyeong</option>
+          <option value="Mina">Mina</option>
+          <option value="Sana">Sana</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p class="label">Are you following the Twice Page?</p>
+      <label class="label-answer">
+        <input name="following-page" value="yes" type="radio" class="input-choice" />
+        Yes, sure.
+      </label>
+      <label class="label-answer">
+        <input name="following-page" value="no" type="radio" class="input-choice" />
+        No.
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p class="label">Which one is your favorite album(s)?</p>
+      <label class="label-answer">
+        <input name="prefer" value="cry-for-me" type="checkbox" class="input-choice" />
+        Cry For Me
+      </label>
+      <label class="label-answer">
+        <input name="prefer" value="eyes-wide-open" type="checkbox" class="input-choice" />Back-end
+        Eyes Wide Open
+      </label>
+      <label class="label-answer">
+        <input name="prefer" value="more-and-more" type="checkbox" class="input-choice" />
+        More and More
+      </label>
+      <label class="label-answer">
+        <input name="prefer" value="feel-special" type="checkbox" class="input-choice" />
+        Feel Special
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>Any comments or suggestions?
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
