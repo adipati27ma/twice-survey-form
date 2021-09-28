@@ -13,6 +13,7 @@ body::before {
   height: 100%;
   background-image: linear-gradient(90deg, rgba(45, 0, 28, 0.6) 2%, rgba(228, 16, 148, .6) 22%, rgba(255, 0, 159, 0.6) 100%), url(img/twice-fancy-you.jpg);
   background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 
